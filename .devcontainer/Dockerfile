@@ -26,5 +26,3 @@ RUN wget https://get.symfony.com/cli/installer -O - | bash && mv /root/.symfony/
 # speedup with hirak/prestissimo
 RUN composer config --global repositories.packagist composer https://packagist.jp
 RUN composer global require hirak/prestissimo
-
-CMD cd /workspaces/symfony-docker-vscode && /usr/local/bin/composer install
